@@ -49,15 +49,25 @@ namespace vhodnoykontrol
                         return;
                     }
 
-                    if (!decimal.TryParse(Vyruchka.Text, out decimal vyruchka))
+                    decimal vyruchka;
+                    try
                     {
-                        MessageBox.Show("введите корректную сумму выручки");
+                        vyruchka = Convert.ToDecimal(Vyruchka.Text);
+                    }
+                    catch
+                    {
+                        MessageBox.Show("введите корректную сумму");
                         return;
                     }
 
-                    if (!DateTime.TryParseExact(DateTextBox.Text, "dd.MM.yyyy", null, System.Globalization.DateTimeStyles.None, out DateTime Date))
+                    DateTime Date;
+                    try
                     {
-                        MessageBox.Show("введите корректную дату в формате дд.мм.гггг.");
+                        Date = Convert.ToDateTime(DateTextBox.Text);
+                    }
+                    catch
+                    {
+                        MessageBox.Show("введите корректную дату (дд.мм.гггг.)");
                         return;
                     }
 
@@ -103,8 +113,6 @@ namespace vhodnoykontrol
             }
             return vyruchka * commissionRate;
         }
-
-     
     }
 
     public class CommissionResult

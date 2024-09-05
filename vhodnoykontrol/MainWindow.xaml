@@ -28,7 +28,7 @@
             <TextBox x:Name="DateTextBox" Height="35" Width="200" Margin="0,5,0,5"/>
             <Label Content="Введите среднюю дневную выручку продавца:" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center" FontSize="14" Height="40"/>
             <TextBox x:Name="Vyruchka" Height="35" Width="200" Margin="0,5,0,5"/>
-            <Button Content="рассчитать" Click="Button_Click" Height="37"  Width="186" Background="#FF2BC938" Foreground="White" Margin="0,15,0,0" FontWeight="Normal" BorderBrush="#FF00FF43" FontSize="16" FontFamily="Segoe UI Black"/>
+            <Button Content="рассчитать" Click="Button_Click" Height="37"  Width="186" Background="#FF5D0794" Foreground="White" Margin="0,15,0,0" FontWeight="Normal" BorderBrush="#FFA56CFF" FontSize="16" FontFamily="Segoe UI Black"/>
         </StackPanel>
         <Label Content="Расчет комиссионных" Grid.ColumnSpan="2" Margin="122,0,0,0" Grid.RowSpan="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="28" Width="665" Height="59"/>
 
